@@ -1,0 +1,65 @@
+# For more options and information see
+# http://rpf.io/configtxtreadme
+# Some settings may impact device functionality. See link above for details
+
+# uncomment if you get no picture on HDMI for a default "safe" mode
+#hdmi_safe=1
+
+# uncomment to force a console size. By default it will be display's size minus
+# overscan.
+#framebuffer_width=1280
+#framebuffer_height=720
+
+#hdmi_force_hotplug=1 # uncomment to enable hdmi
+#config_hdmi_boost=4
+#overscan_left=24
+#overscan_right=24
+#overscan_top=16
+#overscan_bottom=16
+#disable_overscan=0
+
+# overclock
+#arm_freq=900
+#sdram_freq=450
+#core_freq=350
+#force_turbo=1
+
+################################################################################
+##  Standard Definition Video Settings
+################################################################################
+
+## sdtv_mode
+##     defines the TV standard for composite output
+##
+##     Value    Description
+##     -------------------------------------------------------------------------
+##     0        Normal NTSC (Default)
+##     1        Japanese version of NTSC - no pedestal
+##     2        Normal PAL
+##     3        Brazilian version of PAL - 525/60 rather than 625/50, different
+##              subcarrier
+##
+# Change it from 2 to 0
+sdtv_mode=0
+
+## sdtv_aspect
+##     defines the aspect ratio for composite output
+##
+##     Value    Description
+##     -------------------------------------------------------------------------
+##     1        4:3 (Default)
+##     2        14:9
+##     3        16:9
+##
+sdtv_aspect=1
+
+## sdtv_disable_colourburst
+##     Disables colour burst on composite output. The picture will be
+##     monochrome, but possibly sharper
+##
+##     Value    Description
+##     -------------------------------------------------------------------------
+##     0        Colour burst is enabled (Default)
+##     1        Colour burst is disabled
+##
+sdtv_disable_colourburst=1
