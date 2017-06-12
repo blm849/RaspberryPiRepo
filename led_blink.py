@@ -1,5 +1,5 @@
-# A simple Python program to check to see if a button attached
-# to GPIO 18 and if it is, print that it was pressed.
+# A simple Python program to turn an LED light on port 18 on and
+# off. 
 # Taken from http://razzpisampler.oreilly.com/ch03.html#SEC7.1
 
 import RPi.GPIO as GPIO
