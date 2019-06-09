@@ -1,0 +1,37 @@
+# From:
+# https://learn.sparkfun.com/tutorials/setting-up-raspbian-and-doom#dooooooom
+# 
+# There are later versions of Chocolate Doom. Now up to 3.0.0.
+# Also, go here for the latest WAD from the original developer https://www.romerogames.ie/si6il
+
+#Update your system
+sudo apt-get update
+
+# Get dependencies
+sudo apt-get install libsdl1.2debian libsdl-image1.2 libsdl-mixer1.2 libsdl-mixer1.2-dev libsdl-net1.2 libsdl-net1.2-dev timidity.
+
+# Set up a directory
+mkdir ~/Doom
+cd ~/Doom
+
+# Next, download Chocolate Doom with the wget command by sending:
+sudo wget http://www.chocolate-doom.org/downloads/2.0.0/chocolate-doom-2.0.0.tar.gz
+
+# Expand it
+tar -xvf chocolate-doom-2.0.0.tar.gz
+cd chocolate-doom-2.0.0
+
+# Configure and make it
+./configure
+make
+sudo make install
+
+# Get a WAD
+cd ..
+sudo wget http://www.jbserver.com/downloads/games/doom/misc/shareware/doom1.wad.zip
+sudo unzip doom1.wad.zip
+
+# To play, enter:
+echo chocolate-setup -iwad DOOM1.WAD
+
+
