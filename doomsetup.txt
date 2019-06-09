@@ -8,7 +8,10 @@
 sudo apt-get update
 
 # Get dependencies
-sudo apt-get install libsdl1.2debian libsdl-image1.2 libsdl-mixer1.2 libsdl-mixer1.2-dev libsdl-net1.2 libsdl-net1.2-dev timidity.
+sudo apt-get install libsdl1.2debian libsdl-image1.2 libsdl-mixer1.2 libsdl-mixer1.2-dev libsdl-net1.2 libsdl-net1.2-dev timidity 
+# May need these too
+sudo apt-get install libsdl1.2-dev 
+sudo apt-get libsdl-image1.2-dev 
 
 # Set up a directory
 mkdir ~/Doom
