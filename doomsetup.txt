@@ -7,9 +7,15 @@
 #Update your system
 sudo apt-get update
 
-# Get dependencies
-sudo apt-get install libsdl1.2debian libsdl-image1.2 libsdl-mixer1.2 libsdl-mixer1.2-dev libsdl-net1.2 libsdl-net1.2-dev timidity 
-# May need these too
+# Get dependencies. I found I needed to install these one by one by hand for this 
+# to work.
+sudo apt-get install libsdl1.2debian 
+sudo apt-get install libsdl-image1.2 
+sudo apt-get install libsdl-mixer1.2 
+sudo apt-get install libsdl-mixer1.2-dev 
+sudo apt-get install libsdl-net1.2 
+sudo apt-get install libsdl-net1.2-dev 
+sudo apt-get install timidity 
 sudo apt-get install libsdl1.2-dev 
 sudo apt-get libsdl-image1.2-dev 
 
